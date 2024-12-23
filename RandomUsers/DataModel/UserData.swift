@@ -9,7 +9,7 @@ import SwiftUI
 
 @MainActor
 final class UserData: ObservableObject {
-    @Published var users: String = ""
+    @Published var users: [User] = []
     
     init() {
         Task {
